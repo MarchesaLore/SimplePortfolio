@@ -1,15 +1,20 @@
+.content_container{
+    max-width: 900px;
+    margin:auto;
+}
+
 .portfolio_new {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     margin-top: 50px;
 }
-
 @media screen and (max-width: 700px) {
   .portfolio_new {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 .portfolio_new_item_withhover {
     position: relative;
 }
@@ -30,35 +35,15 @@
     width: 100%;
   }
 
-.portfolio_new_item_title_hover .highlight_cont {
+.portfolio_new_item_title_hover span {
     width: 100%;
     text-align: center;
     font-size: 2.5em;
     color: #fff;
     font-weight: 600;
-}
-.highlight_cont {
     display: inline-block;
     vertical-align: middle;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-}
-.portfolio_new_item_withhover .portfolio_item_title_hover {
-    display: none!important;
-}
-@media screen and (max-width: 1425px){
-    .portfolio_item_title_hover {
-        line-height: 18px;
-    }
-}
-.portfolio_item_title_hover {
-    display: none;
-    position: absolute;
-    width: 100%;
-    padding: 20px;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,.45);
 }
